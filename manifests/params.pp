@@ -2,14 +2,14 @@
 class staging::params {
   case $::osfamily {
     default: {
-      $path      = '/opt/staging'
+      $path      = '/opt/staging_'
       $owner     = '0'
       $group     = '0'
       $mode      = '0755'
       $exec_path = '/usr/local/bin:/usr/bin:/bin'
     }
     'Solaris': {
-      $path      = '/opt/staging'
+      $path      = '/opt/staging_'
       $owner     = '0'
       $group     = '0'
       $mode      = '0755'
